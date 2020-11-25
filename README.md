@@ -11,6 +11,8 @@ HES KOD'unun benzeri bir sistem
 
 NOTLAR : 
 
+> yakında "delete data" ve programa özel şifrelenmiş içerikli dosya uzantısı yapılacak (umarım yapabilirim) 
+
 *C kodu ve files dosyası aynı dizinde bulunmalı
 ___
 
