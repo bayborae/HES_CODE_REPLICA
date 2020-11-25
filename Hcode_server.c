@@ -28,16 +28,17 @@ void setcolor(int ForgC){
 }
 void print_logo(){
   char string_from_file[256];
-  FILE *fread = fopen("files\\biologo.txt","r");
-  if(fread==NULL){
+  FILE *freads = fopen("files\\biologo.txt","r");
+  if(freads==NULL){
     printf("error 404\n");
   }
   else{
-    while(fgets(string_from_file,256,fread)!=NULL){
+    while(fgets(string_from_file,256,freads)!=NULL){
       printf("%s",string_from_file);
     }
   }
   printf("\n");
+  fclose(freads);
 }
 void read_file(long long int a){
   char h_code[1000];
@@ -154,6 +155,7 @@ int check_id(long long int c){
   else{
     return 1;
   }
+fclose(fread);
 }
 //*******************************
 int main(){
